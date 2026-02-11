@@ -10,3 +10,6 @@ plugins:
 # Minimal Mistakes defaults that keep things sane
 minimal_mistakes_skin: "default"
 locale: "en-US"
+
+after_footer_scripts:
+  - /assets/js/external-links.js
