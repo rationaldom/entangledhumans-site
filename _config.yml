@@ -13,3 +13,7 @@ locale: "en-US"
 
 after_footer_scripts:
   - /assets/js/external-links.js
+
+head_scripts:
+  - /assets/css/custom.css
+
