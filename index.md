@@ -11,8 +11,9 @@ permalink: /
       <img
         src="{{ '/assets/images/covers/portraits.jpg' | relative_url }}"
         alt="Portraits">
+
+      <span class="eh-overlay">Portraits</span>
     </a>
-    <div class="eh-label">Portraits</div>
   </div>
 </div>
 
