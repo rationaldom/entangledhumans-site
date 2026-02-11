@@ -1,10 +1,11 @@
 ---
-layout: home
-title: EntangledHumans
+layout: splash
+title: "entangledHumans"
+permalink: /
 ---
 
-Welcome. This is the main site.
+Welcome to **entangledHumans**.
 
-- Galleries: https://galleries.entangledhumans.com/
-- Blog: coming soon
-- Contact: coming soon
+- [View all galleries](https://galleries.entangledhumans.com/)
+- [Blog](/blog/)
+- [Contact](/contact/)
