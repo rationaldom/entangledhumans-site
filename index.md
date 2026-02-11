@@ -8,7 +8,7 @@ permalink: /
   <a class="eh-tile" href="https://galleries.entangledhumans.com/portraits/">
     <img src="{{ '/assets/images/covers/portraits.jpg' | relative_url }}" alt="Portraits">
   </a>
-    <div class="eh-label">Portraits</div>
+    <!-- <div class="eh-label">Portraits</div> -->
 </div>
 
 <p>
