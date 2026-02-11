@@ -1,5 +1,7 @@
 title: entangledHumans
 description: Photography, writing, prints & zines
+url: "https://entangledhumans.com"
+baseurl: ""
 
 # Use Minimal Mistakes as a remote theme (GitHub Pages friendly)
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
