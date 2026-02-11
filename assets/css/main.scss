@@ -29,64 +29,42 @@ a.external-link::after {
   margin-bottom: 1rem;
 }
 
-.eh-tile {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.eh-tile img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 10px;
-  display: block;
-}
-
-.eh-label {
-  margin-top: 0.5rem;
-  font-weight: 600;
-}
-
-/* Overlay text on gallery tiles */
-.eh-tile a {
+.eh-tile-link {
   position: relative;
   display: block;
-  color: white;
+  border-radius: 10px;
+  overflow: hidden; /* ensures overlay + gradient follow rounded corners */
   text-decoration: none;
+  color: white;
 }
 
-.eh-tile img {
+.eh-img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 10px;
   display: block;
 }
 
-/* Dark gradient for readability */
-.eh-tile::before {
+/* Gradient overlay for readability */
+.eh-tile-link::after {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 10px;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.0),
-    rgba(0, 0, 0, 0.55)
+    rgba(0, 0, 0, 0.6)
   );
   pointer-events: none;
 }
 
 .eh-overlay {
   position: absolute;
-  bottom: 0.75rem;
   left: 0.75rem;
   right: 0.75rem;
-  font-weight: 600;
-  font-size: 1.1rem;
+  bottom: 0.75rem;
   z-index: 1;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
-
-
