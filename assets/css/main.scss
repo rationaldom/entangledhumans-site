@@ -19,3 +19,32 @@ a.external-link::after {
   background-size: contain;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='currentColor' d='M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3z'/%3E%3Cpath fill='currentColor' d='M5 5h7v2H7v10h10v-5h2v7H5V5z'/%3E%3C/svg%3E");
 }
+
+/* entangledHumans gallery grid */
+.eh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.eh-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.eh-tile img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.eh-label {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
