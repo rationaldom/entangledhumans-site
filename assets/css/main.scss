@@ -21,6 +21,14 @@ a.external-link::after {
 }
 
 /* entangledHumans gallery grid */
+/* =========================================================
+   entangledHumans — Gallery Grid (copy/paste block)
+   - Responsive grid
+   - Rounded tiles
+   - Always-on centered overlay text
+   - Readability gradient
+   ========================================================= */
+
 .eh-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -29,47 +37,73 @@ a.external-link::after {
   margin-bottom: 1rem;
 }
 
-.eh-tile-link {
-  position: relative;
-  display: block;
-  border-radius: 10px;
-  overflow: hidden; /* ensures overlay + gradient follow rounded corners */
-  text-decoration: none;
-  color: white;
+.eh-tile {
+  margin: 0;
 }
 
-.eh-img {
+/* The clickable tile */
+.eh-tile .eh-tile-link {
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* The tile image */
+.eh-tile .eh-img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
 }
 
-/* Gradient overlay for readability */
-.eh-tile-link::after {
+/* Gradient overlay for text readability */
+.eh-tile .eh-tile-link::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.0),
-    rgba(0, 0, 0, 0.6)
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.60)
   );
   pointer-events: none;
 }
 
-.eh-overlay {
+/* Centered overlay text */
+.eh-tile .eh-overlay {
   position: absolute;
   inset: 0;                 /* fill the tile */
   display: flex;
-  align-items: center;      /* vertical centering */
-  justify-content: center;  /* horizontal centering */
-
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
   z-index: 1;
-  font-weight: 700;
-  font-size: 1.25rem;
+
+  padding: 0.75rem;
   text-align: center;
 
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
+  font-weight: 750;
+  font-size: 1.35rem;
+  line-height: 1.15;
+
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
 }
 
+/* Optional: subtle focus ring for keyboard navigation */
+.eh-tile .eh-tile-link:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.85);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* Optional: gentle hover lift (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .eh-tile .eh-tile-link {
+    transition: transform 120ms ease;
+  }
+  .eh-tile .eh-tile-link:hover {
+    transform: translateY(-2px);
+  }
+}
