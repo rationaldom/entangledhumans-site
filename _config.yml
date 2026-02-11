@@ -1,3 +1,12 @@
-title: EntangledHumans
+title: entangledHumans
 description: Photography, writing, prints & zines
-theme: minima
+
+# Use Minimal Mistakes as a remote theme (GitHub Pages friendly)
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-include-cache
+
+# Minimal Mistakes defaults that keep things sane
+minimal_mistakes_skin: "default"
+locale: "en-US"
