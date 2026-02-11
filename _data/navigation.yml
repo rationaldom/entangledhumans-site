@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Galleries"
+    url: https://galleries.entangledhumans.com/
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /blog/
+  - title: "Prints & Zines"
+    url: /prints/
+  - title: "Clients"
+    url: /clients/
+  - title: "Contact"
+    url: /contact/
