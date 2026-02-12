@@ -4,7 +4,9 @@ title: "entangledHumans"
 permalink: /
 ---
 
-{% include eh-gallery-grid.html %}
+<div class="eh-fullbleed">
+  {% include eh-gallery-grid.html %}
+</div>
 
 
 
