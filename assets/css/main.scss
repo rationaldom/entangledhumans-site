@@ -85,6 +85,56 @@
   border-radius: 0;
 }
 
+/* =========================================================
+   entangledHumans — Grid refinement
+   - subtle gutters
+   - edge-to-edge (full-bleed)
+   - tighter “contact sheet” spacing
+   ========================================================= */
+
+/* Full-bleed wrapper: breaks out of theme content width */
+.eh-fullbleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  /* subtle page-edge padding so tiles don’t kiss the browser edge */
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* Tighter grid + subtle gutters */
+.eh-fullbleed .eh-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.6rem;              /* gutter size */
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Make tiles look more like a contact sheet */
+.eh-fullbleed .eh-tile .eh-tile-link {
+  border-radius: 0;         /* square corners */
+  overflow: hidden;
+}
+
+/* Slightly smaller overlay so it feels less “card UI” */
+.eh-fullbleed .eh-tile .eh-overlay {
+  font-size: 1.15rem;
+  padding: 0.6rem;
+}
+
+/* Optional: even tighter on phones */
+@media (max-width: 480px) {
+  .eh-fullbleed {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .eh-fullbleed .eh-grid {
+    gap: 0.45rem;
+  }
+}
+
+
 /* Optional: gentle hover lift (desktop) */
 @media (hover: hover) and (pointer: fine) {
   .eh-tile .eh-tile-link {
