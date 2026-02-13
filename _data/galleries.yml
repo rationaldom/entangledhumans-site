@@ -2,6 +2,7 @@ tiles:
   - title: "Portraits"
     url: "https://galleries.entangledhumans.com/portraits/"
     image: "/assets/images/covers/portraits.jpg"
+    private: true
 
   - title: "Architectural"
     url: "https://galleries.entangledhumans.com/architectural"
