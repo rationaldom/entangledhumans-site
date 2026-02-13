@@ -134,6 +134,35 @@
   }
 }
 
+/* =========================================================
+   Private Content tile treatment
+   ========================================================= */
+
+.eh-private {
+  filter: grayscale(100%);
+}
+
+/* Darker overlay to signal restriction */
+.eh-private::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+/* Add lock indicator */
+.eh-private .eh-overlay::before {
+  content: "🔒 ";
+  font-weight: normal;
+}
+
+/* Optional: remove hover lift for private tiles */
+@media (hover: hover) and (pointer: fine) {
+  .eh-private:hover {
+    transform: none;
+  }
+}
 
 /* Optional: gentle hover lift (desktop)
 @media (hover: hover) and (pointer: fine) {
