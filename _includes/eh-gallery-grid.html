@@ -1,7 +1,9 @@
 <div class="eh-grid">
   {% for t in site.data.galleries.tiles %}
     <div class="eh-tile">
-      <a class="eh-tile-link" href="{{ t.url }}" title="{{ t.title }}">
+      <a class="eh-tile-link{% if t.private %} eh-private{% endif %}"
+         href="{{ t.url }}"
+         title="{{ t.title }}">
         <img class="eh-img" src="{{ t.image | relative_url }}" alt="{{ t.title }}" />
         <span class="eh-overlay">{{ t.title }}</span>
       </a>
