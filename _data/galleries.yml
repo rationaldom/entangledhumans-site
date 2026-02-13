@@ -22,6 +22,7 @@ tiles:
   - title: "Private Content"
     url: "https://galleries.entangledhumans.com/private"
     image: "/assets/images/covers/private.jpg"
+    private: true
 
   - title: "Snowbird"
     url: "https://galleries.entangledhumans.com/snowbird"
