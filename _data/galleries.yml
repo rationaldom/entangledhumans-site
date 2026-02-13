@@ -1,0 +1,28 @@
+tiles:
+  - title: "Portraits"
+    url: "https://galleries.entangledhumans.com/portraits/"
+    image: "/assets/images/covers/portraits.jpg"
+
+  - title: "Architectural"
+    url: "https://galleries.entangledhumans.com/architectural"
+    image: "/assets/images/covers/architectural.jpg"
+
+  - title: "Travel"
+    url: "https://galleries.entangledhumans.com/travel"
+    image: "/assets/images/covers/travel.jpg"
+
+  - title: "Wheels"
+    url: "https://galleries.entangledhumans.com/wheels"
+    image: "/assets/images/covers/wheels.jpg"
+
+  - title: "Baltimore"
+    url: "https://galleries.entangledhumans.com/baltimore"
+    image: "/assets/images/covers/baltimore.jpg"
+
+  - title: "Private Content"
+    url: "https://galleries.entangledhumans.com/private"
+    image: "/assets/images/covers/private.jpg"
+
+  - title: "Snowbird"
+    url: "https://galleries.entangledhumans.com/snowbird"
+    image: "/assets/images/covers/snowbird.jpg"
