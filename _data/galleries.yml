@@ -11,13 +11,13 @@ tiles:
     url: "https://galleries.entangledhumans.com/travel"
     image: "/assets/images/covers/travel.jpg"
 
-  - title: "Wheels"
-    url: "https://galleries.entangledhumans.com/wheels"
-    image: "/assets/images/covers/wheels.jpg"
+ # - title: "Wheels"
+ #   url: "https://galleries.entangledhumans.com/wheels"
+ #   image: "/assets/images/covers/wheels.jpg"
 
-  - title: "Baltimore"
-    url: "https://galleries.entangledhumans.com/baltimore"
-    image: "/assets/images/covers/baltimore.jpg"
+ # - title: "Baltimore"
+ #   url: "https://galleries.entangledhumans.com/baltimore"
+ #   image: "/assets/images/covers/baltimore.jpg"
 
   - title: "Private Content"
     url: "https://galleries.entangledhumans.com/private"
