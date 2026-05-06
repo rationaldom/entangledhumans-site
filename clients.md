@@ -4,4 +4,4 @@ title: "Clients"
 permalink: /clients/
 ---
 
-Coming soon.
+This page is a placeholder for documents and inofrmation for models and clients.
